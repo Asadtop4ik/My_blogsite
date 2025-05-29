@@ -25,7 +25,6 @@ jobs:
         env:
             SECRET_KEY: django-insecure-i2io^+f+#=myckn^rq7p=-67-^gi23r&!%6yr#*ok$k(z6i70u
             DEBUG: True
-            ALLOWED_HOSTS: *
             DB_NAME: myblogdb
             DB_USER: mybloguser
             DB_PASSWORD: myblogpass
