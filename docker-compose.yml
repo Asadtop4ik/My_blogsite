@@ -10,10 +10,8 @@ services:
     restart: always
     volumes:
       - static_volume:/app/staticfiles
-    networks:
-      - myblog-network
-networks:
-  myblog-network:
-    driver: bridge
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
 volumes:
   static_volume:
