@@ -6,12 +6,26 @@ services:
       - "8000:8000"
     env_file:
       - .env
-#    command: gunicorn myblogsite.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn myblogsite.wsgi:application --bind 0.0.0.0:8000
     restart: always
     volumes:
       - static_volume:/app/staticfiles
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-
+    depends_on:
+      - db
+    networks:
+      - myblog-network
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=mybloguser
+      - POSTGRES_PASSWORD=myblogpass
+      - POSTGRES_DB=myblogdb
+    volumes:
+      - ./pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+    networks:
+      - myblog-network
+networks:
+  myblog-network:
+    driver: bridge
 volumes:
   static_volume:
