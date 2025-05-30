@@ -28,7 +28,7 @@ jobs:
             DB_NAME: myblogdb
             DB_USER: mybloguser
             DB_PASSWORD: myblogpass
-            DB_HOST: host.docker.internal
+            DB_HOST: localhost
             DB_PORT: 5432
             EMAIL_HOST: smtp.gmail.com
             EMAIL_HOST_USER: matemmix@gmail.com
