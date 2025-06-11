@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7665f46-518e-474b-bb35-684ad906f39a" name="Changes" comment="migrate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_site/migrations/0001_initial.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,7 @@
       <workItem from="1748511275851" duration="9992000" />
       <workItem from="1748522384496" duration="3738000" />
       <workItem from="1748581449437" duration="10608000" />
-      <workItem from="1748617637190" duration="3222000" />
+      <workItem from="1748617637190" duration="5579000" />
     </task>
     <task id="LOCAL-00001" summary="added">
       <option name="closed" value="true" />

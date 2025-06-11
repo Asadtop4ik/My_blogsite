@@ -22,7 +22,7 @@ RUN chmod +x /entrypoint.sh
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Portni ochish
-EXPOSE 8000
+EXPOSE 9000
 
 # Konteyner ishga tushganda bajariladigan komanda
 ENTRYPOINT ["/entrypoint.sh"]
